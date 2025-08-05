@@ -166,11 +166,61 @@
 <section class="section">
   <div class="container is-max-desktop">
 
+    <!-- Frameworks 섹션 -->
     <div class="columns is-centered">
       <div class="column">
-        <h2 class="title is-2 has-text-centered">Fameworks</h2>
+        <h2 class="title is-2 has-text-centered">Framework</h2>
       </div>
     </div>
+    <div class="columns is-vcentered">
+      <!-- 왼쪽: Framework 이미지 -->
+      <div class="column is-half">
+        <!-- 논문의 Figure 1 이미지를 /images/framework.png 와 같이 저장하여 사용하세요 -->
+        <img src="./static/images/framework.png" alt="System Framework" style="border-radius: 10px; box-shadow: 0 4px M15px rgba(0,0,0,0.1);">
+      </div>
+      <!-- 오른쪽: Framework 설명 -->
+      <div class="column is-half content">
+        <p>
+          The proposed model predicts delay-free visual feedback on user commands by integrating delayed data (video, point cloud, robot status) transmitted from the remote robot with the user’s real-time commands.
+        </p>
+        <p>
+          With the proposed model, delay-free visual feedback to user commands can be predicted in a quadruped robot teleoperation system with communication delays.
+        </p>
+      </div>
+    </div>
+
+    <!-- 구분선 -->
+    <hr style="margin: 3rem 0;">
+
+    <!-- Network Architecture 섹션 -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-2 has-text-centered">Network Architecture</h2>
+      </div>
+    </div>
+    <div class="columns is-vcentered">
+      <!-- 왼쪽: Network Architecture 설명 -->
+      <div class="column is-half content">
+        <p>
+          The network is primarily composed of three encoders — <strong>an image encoder</strong>, <strong>a point cloud encdoer</strong>, and <strong>a robot-command encoder</strong> — followed by <strong>a video transformer</strong>.
+        </p>
+        <ul>
+          <li><strong>The Image, Point Cloud, and Robot-Cmd encoders</strong> extract distinct features from their respective input data.</li>
+          <li><strong>The Video Transformer</strong> plays a key role by fusing all extracted features to predict the representation of current video frames.</li>
+          <li><strong>The Image Decoder</strong> converts the predicted features into final RGB images that can be visually interpreted.</li>
+
+        </ul>
+      </div>
+      <!-- 오른쪽: Network Architecture 이미지 -->
+      <div class="column is-half">
+        <!-- 논문의 Figure 2 이미지를 /images/architecture.png 와 같이 저장하여 사용하세요 -->
+        <img src="./static/images/network_architecture.png" alt="Network Architecture" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      </div>
+      
+    </div>
+
+  </div>
+</section>
 
 
       <!-- Visual Effects. -->
