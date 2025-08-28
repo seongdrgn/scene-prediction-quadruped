@@ -165,20 +165,15 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <!-- Frameworks 섹션 -->
     <div class="columns is-centered">
       <div class="column">
         <h2 class="title is-2 has-text-centered">Framework</h2>
       </div>
     </div>
     <div class="columns is-vcentered">
-      <!-- 왼쪽: Framework 이미지 -->
       <div class="column is-half">
-        <!-- 논문의 Figure 1 이미지를 /images/framework.png 와 같이 저장하여 사용하세요 -->
         <img src="./static/images/framework.png" alt="System Framework" style="border-radius: 10px; box-shadow: 0 4px M15px rgba(0,0,0,0.1);">
       </div>
-      <!-- 오른쪽: Framework 설명 -->
       <div class="column is-half content">
         <p>
           The proposed model predicts delay-free visual feedback on <strong>user commands</strong> by integrating delayed data <strong>(video, point cloud, robot status)</strong> transmitted from the remote robot with the user’s real-time commands.
@@ -189,17 +184,14 @@
       </div>
     </div>
 
-    <!-- 구분선 -->
     <hr style="margin: 3rem 0;">
 
-    <!-- Network Architecture 섹션 -->
     <div class="columns is-centered">
       <div class="column">
         <h2 class="title is-2 has-text-centered">Network Architecture</h2>
       </div>
     </div>
     <div class="columns is-vcentered">
-      <!-- 왼쪽: Network Architecture 설명 -->
       <div class="column is-half content">
         <p>
           The network is primarily composed of three encoders — <strong>an image encoder</strong>, <strong>a point cloud encdoer</strong>, and <strong>a robot-command encoder</strong> — followed by <strong>a video transformer</strong>.
@@ -211,9 +203,7 @@
 
         </ul>
       </div>
-      <!-- 오른쪽: Network Architecture 이미지 -->
       <div class="column is-half">
-        <!-- 논문의 Figure 2 이미지를 /images/architecture.png 와 같이 저장하여 사용하세요 -->
         <img src="./static/images/network_architecture.png" alt="Network Architecture" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       </div>
       
@@ -222,6 +212,49 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- result 섹션 -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-2 has-text-centered">Results</h2>
+      </div>
+    </div>
+
+    <div class="columns is-multiline">
+      
+      <!-- 첫 번째 그림+설명 -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="./static/images/pred_result.png" 
+               alt="Prediction Result" 
+               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <figcaption style="margin-top: 10px;">
+            Qualitative result of each model. This result is in the form of a prediction 
+            for a scenario where the robot turns left after moving straight forward.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- 두 번째 그림+설명 -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="./static/images/command_result.png" 
+               alt="Command Result" 
+               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <figcaption style="margin-top: 10px;">
+            Qualitative result of command data manipulation. Each prediction is the result 
+            of using the same input frame and different commands 
+            (turning left, moving forward and turning right).
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
 <section class="section">
   <div class="container is-max-desktop">
 
