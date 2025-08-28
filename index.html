@@ -217,49 +217,6 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <!-- result 섹션 -->
-    <div class="columns is-centered">
-      <div class="column">
-        <h2 class="title is-2 has-text-centered">Results</h2>
-      </div>
-    </div>
-
-    <div class="columns is-multiline">
-      
-      <!-- 첫 번째 그림+설명 -->
-      <div class="column is-half has-text-centered">
-        <figure>
-          <img src="./static/images/pred_result.png" 
-               alt="Prediction Result" 
-               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-          <figcaption style="margin-top: 10px;">
-            Qualitative result of each model. This result is in the form of a prediction 
-            for a scenario where the robot turns left after moving straight forward.
-          </figcaption>
-        </figure>
-      </div>
-
-      <!-- 두 번째 그림+설명 -->
-      <div class="column is-half has-text-centered">
-        <figure>
-          <img src="./static/images/command_result.png" 
-               alt="Command Result" 
-               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-          <figcaption style="margin-top: 10px;">
-            Qualitative result of command data manipulation. Each prediction is the result 
-            of using the same input frame and different commands 
-            (turning left, moving forward and turning right).
-          </figcaption>
-        </figure>
-      </div>
-
-    </div>
-  </div>
-</section>
-  
-<section class="section">
-  <div class="container is-max-desktop">
-
     <!-- Results section -->
     <div class="columns is-centered">
       <div class="column">
@@ -271,12 +228,11 @@
     <div class="columns is-multiline">
 
       <!-- First column: description + image -->
-      <div class="column is-half has-text-centered">
+      <div class="column is-half">
         <figure>
-          <!-- Description above image -->
-          <figcaption style="margin-bottom: 10px;">
-            Qualitative result of each model. This result is in the form of a prediction 
-            for a scenario where the robot turns left after moving straight forward.
+          <!-- Description above image, justified -->
+          <figcaption style="margin-bottom: 10px; text-align: justify;">
+            <strong>Qualitative result of each baseline.</strong> This result is in the form of a prediction for a scenario where the robot turns left after moving straight forward.
           </figcaption>
           <!-- Image -->
           <img src="./static/images/pred_result.png" 
@@ -286,13 +242,11 @@
       </div>
 
       <!-- Second column: description + image -->
-      <div class="column is-half has-text-centered">
+      <div class="column is-half">
         <figure>
-          <!-- Description above image -->
-          <figcaption style="margin-bottom: 10px;">
-            Qualitative result of command data manipulation. Each prediction is the result 
-            of using the same input frame and different commands 
-            (turning left, moving forward and turning right).
+          <!-- Description above image, justified -->
+          <figcaption style="margin-bottom: 10px; text-align: justify;">
+            <strong>Qualitative result of command data manipulation.</strong> Each prediction is the result of using the same input frame and different commands (turning left, moving forward and turning right).
           </figcaption>
           <!-- Image -->
           <img src="./static/images/command_result.png" 
@@ -304,6 +258,7 @@
     </div>
   </div>
 </section>
+
 
 <hr style="margin: 3rem 0;">
 
