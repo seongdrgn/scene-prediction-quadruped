@@ -129,17 +129,17 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
+          <p style="text-align: justify;">
             Teleoperation systems are utilized in various controllable systems, including vehicles, manipulators, and quadruped robots.
             However, during teleoperation, communication delays can cause users to receive delayed feedback, which reduces controllability and increases the risk faced by the remote robot.
           </p>
-          <p>
+          <p style="text-align: justify;">
             To address this issue, we propose a delay-free video generation model based on user commands that allows users to receive real-time feedback despite communication delays.
             Our model predicts delay-free video by integrating delayed data (video, point cloud, and robot status) from the robot with the user's real-time commands.
             The LiDAR point cloud data, which is part of the delayed data, is used to predict the contents of areas outside the camera frame during robot rotation.
             We constructed our proposed model by modifying the transformer-based video prediction model VPTR-NAR to effectively integrate these data.
           </p>
-          <p>
+          <p style="text-align: justify;">
             For our experiments, we acquired a navigation dataset from a quadruped robot, and this dataset was used to train and test our proposed model.
             We evaluated the model's performance by comparing it with existing video prediction models and conducting an ablation study to verify the effectiveness of its utilization of command and point cloud data.
           </p>
@@ -172,13 +172,13 @@
     </div>
     <div class="columns is-vcentered">
       <div class="column is-half">
-        <img src="./static/images/framework.png" alt="System Framework" style="width: 80%; border-radius: 10px; box-shadow: 0 4px M15px rgba(0,0,0,0.1);">
+        <img src="./static/images/framework.png" alt="System Framework" style="width: 100%; border-radius: 10px; box-shadow: 0 4px M15px rgba(0,0,0,0.1);">
       </div>
       <div class="column is-half content">
-        <p>
+        <p style="text-align: justify;">
           The proposed model predicts delay-free visual feedback on <strong>user commands</strong> by integrating delayed data <strong>(video, point cloud, robot status)</strong> transmitted from the remote robot with the user’s real-time commands.
         </p>
-        <p>
+        <p style="text-align: justify;">
           With the proposed model, delay-free visual feedback to user commands can be predicted in a quadruped robot teleoperation system with communication delays.
         </p>
       </div>
@@ -193,7 +193,7 @@
     </div>
     <div class="columns is-vcentered">
       <div class="column is-half content">
-        <p>
+        <p style="text-align: justify;">
           The network is primarily composed of three encoders — <strong>an image encoder</strong>, <strong>a point cloud encdoer</strong>, and <strong>a robot-command encoder</strong> — followed by <strong>a video transformer</strong>.
         </p>
         <ul>
@@ -204,7 +204,7 @@
         </ul>
       </div>
       <div class="column is-half">
-        <img src="./static/images/network_architecture.png" alt="Network Architecture" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="./static/images/network_architecture.png" alt="Network Architecture" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       </div>
       
     </div>
@@ -237,7 +237,7 @@
           <!-- Image -->
           <img src="./static/images/pred_result.png" 
                alt="comparison_baselines" 
-               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+               style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
       <div class="column is-half">
@@ -249,7 +249,7 @@
           <!-- Image -->
           <img src="./static/images/comparison_table.png" 
                alt="comparison_baselines" 
-               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+               style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
 
@@ -263,7 +263,7 @@
           <!-- Image -->
           <img src="./static/images/command_result.png" 
                alt="Command Result" 
-               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+               style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
 
@@ -276,7 +276,7 @@
           <!-- Image -->
           <img src="./static/images/ablation_point_cloud.png" 
                alt="Prediction Result" 
-               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+               style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
 
