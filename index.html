@@ -113,7 +113,7 @@
       <div class="column">
         <div class="columns is-centered">
           <div class="column content">
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="40%" style="border-radius:10px; ">
+            <video playsinline="" autoplay="" loop="" preload="" muted="" width="80%" style="border-radius:10px; ">
               <source src="./static/videos/overall.mp4" type="video/mp4" />
             </video>
           </div>
@@ -204,7 +204,7 @@
         </ul>
       </div>
       <div class="column is-half">
-        <img src="./static/images/network_architecture.png" alt="Network Architecture" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="./static/images/network_architecture.svg" alt="Network Architecture" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       </div>
       
     </div>
@@ -235,7 +235,7 @@
             <strong>Comparison of Qualitative result with other baselines</strong>, This result is in the form of a prediction for a scenario where the robot turns left after moving straight forward.
           </figcaption>
           <!-- Image -->
-          <img src="./static/images/pred_result.png" 
+          <img src="./static/images/pred_result.svg" 
                alt="comparison_baselines" 
                style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
@@ -252,8 +252,25 @@
                style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Second column: description + image -->
+<hr style="margin: 3rem 0;">
+  
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Results section -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-2 has-text-centered">Ablation Study</h2>
+      </div>
+    </div>
+
+    <!-- Two-column layout -->
+    <div class="columns is-multiline">
+
       <div class="column is-half">
         <figure>
           <!-- Description above image, justified -->
@@ -261,12 +278,11 @@
             <strong>Qualitative result of command data manipulation.</strong> Each prediction is the result of using the same input frame and different commands (turning left, moving forward and turning right).
           </figcaption>
           <!-- Image -->
-          <img src="./static/images/command_result.png" 
+          <img src="./static/images/ablation_command.svg" 
                alt="Command Result" 
                style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
-
       <div class="column is-half">
         <figure>
           <!-- Description above image, justified -->
@@ -274,12 +290,22 @@
             <strong>Qualitative result of point cloud data manipulation.</strong> The point cloud used in each prediction is as follows: (a) the original data, (b) the maximum values and (c) the minimum values of the LiDAR measurement range.
           </figcaption>
           <!-- Image -->
-          <img src="./static/images/ablation_point_cloud.png" 
+          <img src="./static/images/ablation_point_cloud.svg" 
                alt="Prediction Result" 
                style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
 
+       <p style="text-align: justify;">
+          <strong>Qualitative result of varied scenarios.</strong> (a) and (b) represent the same location, as do (c) and (d). While each pair depicts the same location, the model successfully generated the newly introduced structures when they were present.
+        </p>
+      <figure>
+          <!-- Image -->
+          <img src="./static/images/ablation_scenario.svg" 
+               alt="Prediction Result" 
+               style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </figure>
+      
     </div>
   </div>
 </section>
