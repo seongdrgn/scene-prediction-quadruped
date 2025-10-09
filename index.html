@@ -229,16 +229,14 @@
 
       <!-- First column: description + image -->
       <div class="column is-half">
-        <figure>
-          <!-- Description above image, justified -->
-          <figcaption style="margin-bottom: 10px; text-align: justify;">
-            <strong>Qualitative result of each baseline.</strong> This result is in the form of a prediction for a scenario where the robot turns left after moving straight forward.
-          </figcaption>
-          <!-- Image -->
-          <img src="./static/images/pred_result.png" 
-               alt="Prediction Result" 
-               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-        </figure>
+        <img src="./static/images/pred_result.png" alt="comparison_baselines" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      </div>
+
+      <!-- Second column: description + image -->
+      <div class="column is-half content">
+        <p>
+          <strong>Comparison of Qualitative result with other baselines</strong>, This result is in the form of a prediction for a scenario where the robot turns left after moving straight forward.
+        </p>
       </div>
 
       <!-- Second column: description + image -->
@@ -251,6 +249,19 @@
           <!-- Image -->
           <img src="./static/images/command_result.png" 
                alt="Command Result" 
+               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </figure>
+      </div>
+
+      <div class="column is-half">
+        <figure>
+          <!-- Description above image, justified -->
+          <figcaption style="margin-bottom: 10px; text-align: justify;">
+            <strong>Qualitative result of point cloud data manipulation.</strong> The point cloud used in each prediction is as follows: (a) the original data, (b) the maximum values and (c) the minimum values of the LiDAR measurement range.
+          </figcaption>
+          <!-- Image -->
+          <img src="./static/images/ablation_point_cloud.png" 
+               alt="Prediction Result" 
                style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
