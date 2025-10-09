@@ -172,7 +172,7 @@
     </div>
     <div class="columns is-vcentered">
       <div class="column is-half">
-        <img src="./static/images/framework.png" alt="System Framework" style="border-radius: 10px; box-shadow: 0 4px M15px rgba(0,0,0,0.1);">
+        <img src="./static/images/framework.png" alt="System Framework" style="width: 80%; border-radius: 10px; box-shadow: 0 4px M15px rgba(0,0,0,0.1);">
       </div>
       <div class="column is-half content">
         <p>
@@ -204,7 +204,7 @@
         </ul>
       </div>
       <div class="column is-half">
-        <img src="./static/images/network_architecture.png" alt="Network Architecture" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="./static/images/network_architecture.png" alt="Network Architecture" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       </div>
       
     </div>
@@ -229,14 +229,28 @@
 
       <!-- First column: description + image -->
       <div class="column is-half">
-        <img src="./static/images/pred_result.png" alt="comparison_baselines" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <figure>
+          <!-- Description above image, justified -->
+          <figcaption style="margin-bottom: 10px; text-align: justify;">
+            <strong>Comparison of Qualitative result with other baselines</strong>, This result is in the form of a prediction for a scenario where the robot turns left after moving straight forward.
+          </figcaption>
+          <!-- Image -->
+          <img src="./static/images/pred_result.png" 
+               alt="comparison_baselines" 
+               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </figure>
       </div>
-
-      <!-- Second column: description + image -->
-      <div class="column is-half content">
-        <p>
-          <strong>Comparison of Qualitative result with other baselines</strong>, This result is in the form of a prediction for a scenario where the robot turns left after moving straight forward.
-        </p>
+      <div class="column is-half">
+        <figure>
+          <!-- Description above image, justified -->
+          <figcaption style="margin-bottom: 10px; text-align: justify;">
+            <strong>Table: comparison with other models</strong>
+          </figcaption>
+          <!-- Image -->
+          <img src="./static/images/comparison_table.png" 
+               alt="comparison_baselines" 
+               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </figure>
       </div>
 
       <!-- Second column: description + image -->
@@ -249,7 +263,7 @@
           <!-- Image -->
           <img src="./static/images/command_result.png" 
                alt="Command Result" 
-               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
 
@@ -262,7 +276,7 @@
           <!-- Image -->
           <img src="./static/images/ablation_point_cloud.png" 
                alt="Prediction Result" 
-               style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+               style="width: 80%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         </figure>
       </div>
 
